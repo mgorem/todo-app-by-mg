@@ -4,7 +4,7 @@ import { getFirestore } from "firebase/firestore";
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBFZum9nHcQjH_Ac45Kth5LjnjUKWMnLp0",
+  apiKey: process.env.API_KEY,
   authDomain: process.env.AUTH_DOMAIN,
   projectId: process.env.PROJECT_ID,
   storageBucket: process.env.STORAGE_BUCKET,
