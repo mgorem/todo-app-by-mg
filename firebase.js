@@ -1,10 +1,10 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebaseauth";
-import { getFireStore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
+  apiKey: "AIzaSyBFZum9nHcQjH_Ac45Kth5LjnjUKWMnLp0",
   authDomain: process.env.AUTH_DOMAIN,
   projectId: process.env.PROJECT_ID,
   storageBucket: process.env.STORAGE_BUCKET,
@@ -15,4 +15,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);
-export const db = getFireStore(app);
+export const db = getFirestore(app);
